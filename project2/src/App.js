@@ -6,6 +6,8 @@ import Header from './components/Header.jsx'
 import About from './components/About.jsx'
 import Form from './components/Form.jsx'
 import ToKnow from './components/ToKnow.jsx'
+import ToFix from './components/ToFix.jsx'
+import ToOrder from './components/ToOrder.jsx'
 import { useState, useEffect } from 'react'
 
 
@@ -21,8 +23,8 @@ export default function App() {
         <Route path='/TellMe' element={<Form />} />
         <Route path='/Leaderboard' element={null} />
         <Route path='/PrivateMsg' element={null} />
-        <Route path='/toOrder' element={null} />
-        <Route path='/toFix' element={null} />
+        <Route path='/toOrder' element={<ToOrder />} />
+        <Route path='/toFix' element={<ToFix />} />
         <Route path='/toKnow' element={<ToKnow />} />
       </Routes>
     </div>

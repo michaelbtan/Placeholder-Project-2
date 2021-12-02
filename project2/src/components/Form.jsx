@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
-import { postResults } from '../services'
+import { postResultsToKnow, postResultsToOrder, postResultsToFix } from '../services'
 import { useParams, useNavigate } from 'react-router-dom'
 
 export default function Form(props) {
@@ -38,7 +38,7 @@ export default function Form(props) {
     //     navigate(`/recipies/${params.id}`)
     //   }
     // } else {
-    const res = await postResults(newResults)
+    const res = await postResultsToKnow(newResults)
     // props.setToggle(prevToggle => !prevToggle)
     if (res) {
       navigate('/')
