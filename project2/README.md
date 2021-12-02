@@ -64,7 +64,6 @@ At my ice cream store there always seems to be either thing that breakdown or th
 
 
 #### MVP 
-*These are examples only. Replace with your own MVP features.*
 
 - Find and use airtable api
 - Render current entries on page 
@@ -72,7 +71,6 @@ At my ice cream store there always seems to be either thing that breakdown or th
 - Give user a message 
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
 - Point system based on entires using specific name
 - Edit previous inputs
