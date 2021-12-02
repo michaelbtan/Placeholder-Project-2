@@ -23,42 +23,40 @@ At my ice cream store there always seems to be either thing that breakdown or th
 
 ## API and Data Sample
 
-<!-- Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This __must__ be properly formatted. An example is below:
-
 ```json
 {
     "records": [
         {
-            "id": "recONRzIUTuZ5lXaF",
+            "id": "rec2j973AZ4SsxqIR",
             "fields": {
-                "author": "Liz Yrineo",
-                "setup": "Why did the tomato turn red?",
-                "punchline": "Because it saw the salad dressing!"
+                "notes": "low on bleach",
+                "number": "4",
+                "name": "Bill 1"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-12-01T18:35:46.000Z"
         },
         {
-            "id": "rec3oYZ5Tp0AIDsKe",
+            "id": "rec4WFrbLa16bSzC9",
             "fields": {
-                "author": "Rachel Moskowitz",
-                "setup": "What did the green grape say to the red grape?",
-                "punchline": "Breathe, idiot, breathe!"
+                "notes": "low on milk",
+                "number": "5",
+                "name": "Bill 2"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-12-01T18:35:46.000Z"
         },
         {
-            "id": "recA34tOaoE1IVeC1",
+            "id": "recnUJ5lbKlkXOxCd",
             "fields": {
-                "author": "Gary Grant",
-                "setup": "How do you make holy water?",
-                "punchline": "You boil the hell out of it!"
+                "notes": "order more paper cups",
+                "number": "8",
+                "name": "Bill 3"
             },
-            "createdTime": "2020-11-30T16:03:09.000Z"
+            "createdTime": "2021-12-01T18:35:46.000Z"
         }
     ],
-    "offset": "recA34tOaoE1IVeC1"
+    "offset": "itrxZyCKxeM01lO5B/recnUJ5lbKlkXOxCd"
 }
-``` -->
+```
 
 ### MVP/PostMVP
 
@@ -103,15 +101,23 @@ This schedule will be used to keep track of your progress throughout the week an
 | Creating Footer | H | 3hrs| 3.5hrs | 3.5hrs |
 | Adding Media Query| H | 3hrs| 2.5hrs | 2.5hrs |
 | Editting Feature| L | 3hrs| 3.5hrs | 3.5hrs |
-| Point System Feature L | 3hrs| 2.5hrs | 2.5hrs |
+| Point System Feature | L | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 30hrs| 31hrs | 31hrs |
 
 ## SWOT Analysis
 
 ### Strengths:
 
+I think this will be a good project to work on getting feedback from the end user as I go. My goal is to make internal communication within our team more fun and rewarding, so maybe they will be able to give me advice on the UX and the features that would be useful.
+
 ### Weaknesses:
+
+Not completely sure about would additional features will make this "fun," hoping to accomplish building a rough MVP would be and use feedback from the team to have something more useful for them to inevitably use.
 
 ### Opportunities:
 
+This project gives me the opportunity to build something that I can use for my personal life, including work. I think it could potentially solve an issue I face at work and, might help the team as well have better, more fun communication.
+
 ### Threats:
+
+Usually not the best at debugging, I think that this will be a good opportunity to practice and get better at it. I also am not completely sure about all the features I want to add, but I think it will be good to get feedback as I go with our team.
