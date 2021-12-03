@@ -1,4 +1,5 @@
 import React from 'react'
+import './ToFix.css'
 import { useState, useEffect } from 'react'
 // import { useParams, useNavigate } from 'react-router-dom'
 import { grabResultsToFix } from '../services/index.js'
@@ -25,8 +26,8 @@ export default function ToOrder() {
     <div className='toFix-Container'>
       {toFixs.map((toFix) => {
         return (
-          <div id={toFix?.id}>
-            <h1>Name: {toFix?.fields?.name}</h1>
+          <div className='toFix-boxes' id={toFix?.id}>
+            <h2>Name: {toFix?.fields?.name}</h2>
             <h3>Notes: {toFix?.fields?.notes}</h3>
           </div>
         )

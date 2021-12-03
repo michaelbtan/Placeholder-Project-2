@@ -21,3 +21,15 @@
   /* border: 1px solid black; */
   box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
 }
+
+.toOrderButton  {
+  padding: 20px;
+}
+
+.toFixButton  {
+  padding: 20px;
+}
+
+.toKnowButton  {
+  padding: 20px;
+}

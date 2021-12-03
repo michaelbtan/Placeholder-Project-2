@@ -43,9 +43,9 @@ export default function Form() {
     // } else {
     const res = await postResultsToKnow(newResults)
     // props.setToggle(prevToggle => !prevToggle)
-    // if (res) {
-    //   navigate('/')
-    // }
+    if (res) {
+      navigate('/')
+    }
   }
   // }
 
@@ -65,8 +65,8 @@ export default function Form() {
           placeholder='How Many Left?'
           onChange={(e) => setNumber(e.target.value)}
         /> <br />
-        <input
-          type='text'
+        <textarea className='inputNotes'
+          type='text-area'
           value={notes}
           placeholder='Tell Me More...'
           onChange={(e) => setNotes(e.target.value)}
