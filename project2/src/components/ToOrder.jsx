@@ -1,3 +1,4 @@
+import './ToOrder.css'
 import React from 'react'
 import { useState, useEffect } from 'react'
 // import { useParams, useNavigate } from 'react-router-dom'
@@ -25,8 +26,8 @@ export default function ToOrder() {
     <div className='toOrder-Container'>
       {toOrders.map((toOrder) => {
         return (
-          <div id={toOrder?.id}>
-            <h1>Name: {toOrder?.fields?.name}</h1>
+          <div className='toOrder-boxes' id={toOrder?.id}>
+            <h2>Name: {toOrder?.fields?.name}</h2>
             <h3>Notes: {toOrder?.fields?.notes}</h3>
           </div>
         )

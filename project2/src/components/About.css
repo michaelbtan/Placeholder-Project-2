@@ -12,16 +12,17 @@
   background-color: #f2f2f2;
   box-shadow: 0 4px 6px 0 rgba(0,0,0,.2);
   border-radius: 5px;
+  border: 1px solid rgb(179, 171, 171);
 }
 
-.block {
+.Aboutblock {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
   justify-content: center;
 }
 
-h1 {
+.About-Container h1 {
   justify-content: center;
   align-items: center;
 }
