@@ -7,5 +7,47 @@ h1  {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+  margin-top: 20px;
+}
+
+input[type=text] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=radio] {
+  width: 50px;
+  margin: 8px 0;
+}
+
+.submitButton {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(179, 171, 171);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #13D1BD;
+}
+
+.submitButton:hover {
+  background-color: #14b9a9;
+}
+
+.input-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 500px;
+  justify-content: center;
   margin-top: 50px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }

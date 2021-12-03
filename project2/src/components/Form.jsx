@@ -50,7 +50,7 @@ export default function Form() {
   // }
 
   return (
-    <div>
+    <div className="input-form">
       <h1>Tell Me What I Want To Know!</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -72,12 +72,12 @@ export default function Form() {
           onChange={(e) => setNotes(e.target.value)}
         /> <br />
         <input type="radio" id="1" name="selector" value="toOrder" />
-        <label for="toOrder">toOrder</label>
+        <label for="toOrder">to Order</label>
         <input type="radio" id="2" name="selector" value="toKnow" />
-        <label for="toKnow">toKnow</label>
+        <label for="toKnow">to Know</label>
         <input type="radio" id="3" name="selector" value="toFix" />
-        <label for="toFix">toFix</label> <br />
-        <button>Submit</button>
+        <label for="toFix">to Fix</label> <br />
+        <button className='submitButton'>Submit</button>
       </form>
     </div>
   )

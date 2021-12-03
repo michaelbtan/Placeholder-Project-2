@@ -8,7 +8,7 @@
   border: 1px dotted red;
 }
 
-a {
+.nav-container a {
   margin-left: 50px;
   font-size: 15px;
   text-decoration: none;
@@ -16,18 +16,3 @@ a {
   border: 1px dotted black;
   font-family: 'Roboto', sans-serif;
 }
-
-/* .nav-container .leftSide {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 50px;
-}
-
-.nav-container .rightSide {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-right: 50px;
-  padding-right: 50px;
-} */
