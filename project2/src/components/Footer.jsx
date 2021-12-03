@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div>
       <footer>
-        <h3>fffffre</h3>
+        <h3>Is this Roboto?</h3>
       </footer>
     </div>
   )

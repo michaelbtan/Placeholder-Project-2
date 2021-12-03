@@ -1,9 +1,12 @@
 import React from 'react'
+import './Form.css'
 import { useState, useEffect } from 'react'
 import { postResultsToKnow, postResultsToOrder, postResultsToFix } from '../services'
 import { useParams, useNavigate } from 'react-router-dom'
+// import { BASE_URL_toKnow } from '../services/index.js'
 
-export default function Form(props) {
+
+export default function Form() {
 
   const [name, setName] = useState('')
   const [number, setNumber] = useState('')
@@ -40,39 +43,40 @@ export default function Form(props) {
     // } else {
     const res = await postResultsToKnow(newResults)
     // props.setToggle(prevToggle => !prevToggle)
-    if (res) {
-      navigate('/')
-    }
+    // if (res) {
+    //   navigate('/')
+    // }
   }
   // }
 
   return (
     <div>
+      <h1>Tell Me What I Want To Know!</h1>
       <form onSubmit={handleSubmit}>
         <input
           type='text'
           value={name}
           placeholder='Name'
           onChange={(e) => setName(e.target.value)}
-        />
+        /> <br />
         <input
           type='text'
           value={number}
           placeholder='How Many Left?'
           onChange={(e) => setNumber(e.target.value)}
-        />
+        /> <br />
         <input
           type='text'
           value={notes}
-          placeholder='Tell Me More'
+          placeholder='Tell Me More...'
           onChange={(e) => setNotes(e.target.value)}
-        />
+        /> <br />
         <input type="radio" id="1" name="selector" value="toOrder" />
         <label for="toOrder">toOrder</label>
         <input type="radio" id="2" name="selector" value="toKnow" />
         <label for="toKnow">toKnow</label>
         <input type="radio" id="3" name="selector" value="toFix" />
-        <label for="toFix">toFix</label>
+        <label for="toFix">toFix</label> <br />
         <button>Submit</button>
       </form>
     </div>

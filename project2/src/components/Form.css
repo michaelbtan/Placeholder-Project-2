@@ -1,0 +1,11 @@
+form {
+  margin-top: 40px;
+  text-align: center;
+}
+
+h1  {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 50px;
+}
