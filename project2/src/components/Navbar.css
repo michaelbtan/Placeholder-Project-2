@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
 .nav-container {
   width: 100%;
   height: 40px;
@@ -21,3 +29,20 @@
 .nav-container a:hover {
   color: #dad8d8;
 }
+
+@media (max-width: 600px) {
+
+  .nav-container {
+    display: none;
+  }
+
+}
+
+
+  @media (min-width: 600px) {
+
+    .mobile-nav-button {
+      display: none;
+      }
+
+    }
