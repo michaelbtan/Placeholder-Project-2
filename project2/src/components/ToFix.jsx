@@ -23,6 +23,7 @@ export default function ToOrder() {
 
 
   return (
+    <div className='toFixDisplay'>
     <div className='toFix-Container'>
       {toFixs.map((toFix) => {
         return (
@@ -32,6 +33,7 @@ export default function ToOrder() {
           </div>
         )
       })}
+    </div>
     </div>
   )
 }

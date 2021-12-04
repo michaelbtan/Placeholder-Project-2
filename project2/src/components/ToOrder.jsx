@@ -23,6 +23,7 @@ export default function ToOrder() {
 
 
   return (
+    <div className='toOrderDisplay'>
     <div className='toOrder-Container'>
       {toOrders.map((toOrder) => {
         return (
@@ -32,6 +33,7 @@ export default function ToOrder() {
           </div>
         )
       })}
-    </div>
+      </div>
+      </div>
   )
 }

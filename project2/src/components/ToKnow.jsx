@@ -23,6 +23,7 @@ export default function ToKnow() {
 
 
   return (
+    <div className='toKnowDisplay'>
     <div className='toKnow-Container'>
       {toKnows.map((toKnow) => {
         return (
@@ -32,6 +33,7 @@ export default function ToKnow() {
           </div>
         )
       })}
-    </div>
+      </div>
+      </div>
   )
 }

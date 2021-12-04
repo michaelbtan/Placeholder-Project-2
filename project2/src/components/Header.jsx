@@ -16,7 +16,7 @@ export default function Header() {
         <h2>Things to Fix</h2>
         <p>What do we need? Tell me what and how many pls</p>
         <img src='https://www.iconpacks.net/icons/1/free-wrench-icon-951-thumb.png'
-          height='150px' width='150px' alt='wrench' />
+          height='200px' width='200px' alt='wrench' />
       </Link>
       <Link className='toKnowButton' to='/toKnow'>
         <h2>Things to Know About</h2>

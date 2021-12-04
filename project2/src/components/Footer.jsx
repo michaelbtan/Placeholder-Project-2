@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <div>
       <footer>
-        <h3>Is this Roboto?</h3>
+        <h3>This is a footer @2021</h3>
       </footer>
     </div>
   )

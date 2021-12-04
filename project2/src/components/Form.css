@@ -63,3 +63,11 @@ input[type=radio] {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+@media (max-width: 600px) {
+
+  form {
+    margin-bottom: 100px;
+  }
+  
+}

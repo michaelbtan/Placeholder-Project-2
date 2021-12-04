@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-      <div className={navbarOpen ? "openNav" : "closedNav"} onClick={handleToggle}>
+      <div className={navbarOpen ? "openNav" : "closedNav"} onClick={handleToggle} >
         <div className="bar1"></div>
         <div className="bar2"></div>
         <div className="bar3"></div>
