@@ -12,15 +12,16 @@ export default function Navbar() {
     setNavbarOpen(prev => !prev)
   }
 
+
   return (
     <div>
-      <div class="container" onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}>
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
       <nav>
-        <div className='nav-container'>
+      <div className={navbarOpen ? "openNav" : "closedNav"} onClick={handleToggle}>
+        <div className="bar1"></div>
+        <div className="bar2"></div>
+        <div className="bar3"></div>
+      </div>
+        <div className={navbarOpen ? 'mobile-container' : 'nav-container'}>
           <Link to='/'>Home</Link>
           <Link to='/About'>About</Link>
           <Link to='/TellMe'>Tell Me</Link>
