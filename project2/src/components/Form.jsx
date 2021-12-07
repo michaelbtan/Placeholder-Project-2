@@ -41,11 +41,18 @@ export default function Form() {
     //     navigate(`/recipies/${params.id}`)
     //   }
     // } else {
+
     const res = await postResultsToKnow(newResults)
-    // props.setToggle(prevToggle => !prevToggle)
     if (res) {
+      console.log("hit submit")
       navigate('/')
     }
+    // // navigate('/')
+    // // props.setToggle(prevToggle => !prevToggle)
+    // if (res) {
+    //   console.log("hit submit")
+    //   navigate('/')
+    // }
   }
   // }
 

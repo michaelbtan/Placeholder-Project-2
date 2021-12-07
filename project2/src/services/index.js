@@ -29,7 +29,7 @@ export const grabResultsToOrder = async () => {
 }
 
 export const postResultsToOrder = async (body) => {
-  const res = await axios.post(BASE_URL_toOrder, { fields: body }, config)
+  const res = await axios.post(BASE_URL_toOrder, { body }, config)
   return res.data
 }
 
