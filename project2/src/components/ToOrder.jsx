@@ -29,7 +29,8 @@ export default function ToOrder() {
         return (
           <div className='toOrder-boxes' id={toOrder?.id}>
             <h2>Name: {toOrder?.fields?.name}</h2>
-            <h3>Notes: {toOrder?.fields?.notes}</h3>
+            <h4>How Many? {toOrder?.fields?.number}</h4>
+            <h3> Notes: {toOrder?.fields?.notes}</h3>
           </div>
         )
       })}

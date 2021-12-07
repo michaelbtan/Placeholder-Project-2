@@ -11,6 +11,7 @@ export default function Form() {
   const [name, setName] = useState('')
   const [number, setNumber] = useState('')
   const [notes, setNotes] = useState('')
+  const [fix, setFix] = useState('')
   const navigate = useNavigate()
   const params = useParams()
 
@@ -29,7 +30,16 @@ export default function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const newResults = {
+    const newResultsToKnow = {
+      name,
+      notes
+    }
+    const newResultsToFix = {
+      name,
+      fix,
+      notes
+    }
+    const newResultsToOrder = {
       name,
       number,
       notes
@@ -41,10 +51,14 @@ export default function Form() {
     //     navigate(`/recipies/${params.id}`)
     //   }
     // } else {
-
-    const res = await postResultsToKnow(newResults)
-    if (res) {
-      console.log("hit submit")
+    const resKnow = await postResultsToFix(newResultsToFix)
+    const resFix = await postResultsToKnow(newResultsToKnow)
+    const resOrder = await postResultsToOrder(newResultsToOrder)
+    if (resOrder) {
+      navigate('/')
+    } else if (resFix) {
+      navigate('/')
+    } else if (resKnow) {
       navigate('/')
     }
     // // navigate('/')
@@ -65,6 +79,12 @@ export default function Form() {
           value={name}
           placeholder='Name'
           onChange={(e) => setName(e.target.value)}
+        /> <br />
+        <input
+          type='text'
+          value={fix}
+          placeholder='Can it be fixed?'
+          onChange={(e) => setFix(e.target.value)}
         /> <br />
         <input
           type='text'
