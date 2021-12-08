@@ -53,6 +53,7 @@ export default function Form() {
     const resKnow = await postResultsToFix(newResultsToFix)
     const resFix = await postResultsToKnow(newResultsToKnow)
     const resOrder = await postResultsToOrder(newResultsToOrder)
+    console.log(newResultsToOrder)
     if (resOrder) {
       navigate('/')
     } else if (resFix) {
