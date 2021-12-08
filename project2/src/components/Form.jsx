@@ -1,8 +1,8 @@
 import React from 'react'
 import './Form.css'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { postResultsToKnow, postResultsToOrder, postResultsToFix } from '../services'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import { BASE_URL_toKnow } from '../services/index.js'
 
 
@@ -13,7 +13,6 @@ export default function Form() {
   const [notes, setNotes] = useState('')
   const [fix, setFix] = useState('')
   const navigate = useNavigate()
-  const params = useParams()
 
   // useEffect(() => {
   //   if (props.results) {
