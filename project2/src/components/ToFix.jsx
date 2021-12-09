@@ -29,6 +29,7 @@ export default function ToOrder() {
         return (
           <div className='toFix-boxes' id={toFix?.id}>
             <h2>Name: {toFix?.fields?.name}</h2>
+            <h3>How to Fix: {toFix?.fields?.fix}</h3>
             <h3>Notes: {toFix?.fields?.notes}</h3>
           </div>
         )
